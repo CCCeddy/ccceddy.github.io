@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+			<form>
+				<fieldset>
+				<legend>Your contact information</legend>
+				<label for="name">Your name</label>
+				<input type="text" id="name" name="name">
+
+				<label for="phone">Phone number</label>
+				<input type="tel" id="phone" name="phone">
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email">
+				</fieldset>
+
+				
+				<h2>About your abduction </h2>
+				<p>Requested date</p>
+				<p>How many people would you like abducted?</p>
+				<p>What type of UFO do you prefer?</p>
+				
+					<label>
+						<input type="radio" name="ufotype" value="classic" checked>Classic oval UFO
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="imperial"> Star Wars-style Imperial cruiser
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="glactica"> Battlestar Galactica-style Viper
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="borg" > Borg-style cube
+					</label>
+					
+				<label for="abtype">What type of abduction experience do you want?</label>
+				<select id="abtype" name="abtype">
+					
+					<option selected>Select one...</option>
+					<option value="tour">Tour of the solar system</option>
+					<option value="dinner">Alien dinner and discussion</option>
+					<option value="dance">Alien dance lessons</option>
+					<option value="whales">Whale watching</option>
+				</select>
+				<label for="tarea">Special requests:</label>
+				<textarea name="tarea" id="tarea" cols="30" rows="10" placeholder="This is what you get..."></textarea>
+				<label>
+					Add me to your email list
+					<input type="checkbox" name="mailist" value="mailist" checked>
+				</label>
+			</form>
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+		</aside>
+	</div>
+</body>
+
+</html>
+</html>
