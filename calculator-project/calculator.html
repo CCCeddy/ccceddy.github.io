@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <!-- CTRL + SHIFT + L -->
+
+  <body onload="theme.reset()" id="bod">
+    <div id="settings" class="settings">
+      <div id="settings1">
+        <h2>Settings</h2>
+        <form name="theme" id="theme">
+          <h3>Theme</h3>
+          <p>
+            <input
+              type="radio"
+              checked
+              name="light-mode"
+              id="light"
+              value="0"
+              onclick="colorTheme(this.value)"
+            /><label id="light-label" for="light">Light</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              onclick="colorTheme(this.value)"
+              name="light-mode"
+              id="dark"
+              value="1"
+            /><label id="dark-label" for="dark">Dark</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              onclick="colorTheme(this.value)"
+              name="light-mode"
+              id="hide"
+              value="2"
+            /><label for="calc-hide-check">Hide</label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div id="wrapper" class="wrapper">
+      <div id="screen" class="screen">
+        <p class="display-num">0</p>
+      </div>
+      <div class="calc-buttons">
+        <div class="rows row1">
+          <div id="c00" class="col1 cells ce top-bar">CE</div>
+          <div id="c02" class="col3 cells backspace">←</div>
+          <div id="c03" class="col4 operators divide cells">&divide;</div>
+        </div>
+        <div class="row2 rows">
+          <div id="c10" class="col1 keypad seven cells">7</div>
+          <div id="c11" class="col2 keypad eight cells">8</div>
+          <div id="c12" class="col3 keypad nine cells">9</div>
+          <div id="c13" class="col4 operators times cells">&times;</div>
+        </div>
+        <div class="row3 rows">
+          <div id="c20" class="col1 keypad four cells">4</div>
+          <div id="c21" class="col2 keypad five cells">5</div>
+          <div id="c22" class="col3 keypad six cells">6</div>
+          <div id="c23" class="col4 operators minus cells">-</div>
+        </div>
+        <div class="row4 rows">
+          <div id="c30" class="col1 keypad one cells">1</div>
+          <div id="c31" class="col2 keypad two cells">2</div>
+          <div id="c32" class="col3 keypad three cells">3</div>
+          <div id="c33" class="col4 operators plus cells">&plus;</div>
+        </div>
+        <div class="row5 rows">
+          <div id="c40" class="col1 keypad doubleZero cells">00</div>
+          <div id="c41" class="col2 keypad zero cells">0</div>
+          <div id="c42" class="col3 dot cells">.</div>
+          <div id="c43" class="col4 cells equals">&equals;</div>
+        </div>
+      </div>
+    </div>
+    <script src="./calculator.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

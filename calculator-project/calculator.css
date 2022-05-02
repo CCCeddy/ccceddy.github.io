@@ -1,0 +1,227 @@
+:root {
+  --settingsLightBlue: rgb(171, 209, 215);
+  --settingsDarkBlue: rgb(32, 50, 67);
+  --darkBlue: rgb(21, 21, 66);
+  --darkWheat: rgb(216, 205, 175);
+}
+body {
+  display: grid;
+  justify-content: center;
+}
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    'settings screen'
+    'settings row1'
+    'row2'
+    'row3'
+    'row4'
+    'row5';
+  width: 600px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+.rows {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.row1 {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.screen {
+  grid-area: 'screen';
+  background-color: rgb(176, 208, 218);
+  border: 5px solid black;
+  display: grid;
+  padding: 0;
+}
+.display-num {
+  display: grid;
+  justify-content: right;
+  padding: 1rem;
+  margin: 0;
+  font-size: 2.5rem;
+}
+.cells {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 3px solid black;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.cells:hover {
+  background-color: rgb(164, 164, 185);
+  transition-duration: 100ms;
+}
+.cells:active {
+  background-color: rgb(116, 116, 154);
+  transition-duration: 10ms;
+}
+.top-bar {
+  background-color: rgb(31, 117, 117);
+  color: whitesmoke;
+}
+.backspace {
+  background-color: rgb(189, 47, 47);
+  color: whitesmoke;
+}
+.equals {
+  background-color: silver;
+}
+.operators {
+  background-color: rgb(255, 213, 0);
+}
+.keypad {
+  background-color: rgb(124, 211, 228);
+}
+.dot {
+  background-color: rgb(99, 192, 210);
+  font-weight: bolder;
+}
+
+.settings {
+  position: fixed;
+  /* left: 100px; */
+  background-color: var(--settingsLightBlue);
+  border: 3px solid rgb(231, 240, 247);
+  border-radius: 5px;
+  display: grid;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#settings1 {
+  /* background-color: rgb(171, 209, 215); */
+  display: grid;
+  justify-content: center;
+}
+#settings1 h2 {
+  color: rgb(171, 209, 215);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 2rem;
+  display: grid;
+  justify-content: center;
+  background-color: rgb(32, 50, 67);
+  margin: 0;
+  padding: 1rem;
+}
+.settings h3 {
+  font-size: 1.5rem;
+}
+.settings label {
+  font-size: 1.2rem;
+}
+#theme {
+  border: 2px solid rgb(141, 183, 189);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: var(--settingsDarkBlue);
+}
+
+body.dark {
+  background-color: black;
+}
+.screen.dark {
+  background-color: rgb(15, 15, 52);
+  color: var(--darkWheat);
+}
+.top-bar.dark {
+  background-color: rgb(10, 45, 45);
+  color: var(--darkWheat);
+}
+.backspace.dark {
+  background-color: rgb(93, 18, 18);
+  color: var(--darkWheat);
+}
+.operators.dark {
+  background-color: rgb(145, 63, 0);
+  color: var(--darkWheat);
+}
+.keypad.dark {
+  background-color: rgb(39, 60, 105);
+  color: var(--darkWheat);
+}
+.dot.dark {
+  background-color: rgb(19, 71, 71);
+  color: var(--darkWheat);
+}
+.equals.dark {
+  background-color: rgb(29, 18, 55);
+  color: var(--darkWheat);
+}
+.dark.wrapper {
+  border-color: silver;
+}
+.dark.cells:hover {
+  background-color: rgb(74, 74, 90);
+}
+.dark.cells:active {
+  background-color: grey;
+}
+.dark.settings {
+  background-color: var(--settingsDarkBlue);
+  border-color: rgb(23, 79, 94);
+}
+.dark#settings1 h2 {
+  background-color: var(--settingsLightBlue);
+  color: var(--settingsDarkBlue);
+}
+.dark#theme {
+  color: var(--settingsLightBlue);
+}
+.dark#settings1,
+.dark#theme,
+.dark.settings,
+.dark.wrapper,
+.dot.dark,
+.equals.dark,
+.keypad.dark,
+.screen.dark,
+.top-bar.dark,
+.backspace.dark,
+.operators.dark {
+  transition-duration: 300ms;
+}
+.settings,
+#settings1,
+#theme,
+.wrapper,
+.dot,
+.equals,
+.keypad,
+.screen,
+.top-bar,
+.backspace,
+.operators {
+  transition-duration: 300ms;
+}
+
+@media only screen and (max-width: 910px) {
+  body {
+    justify-content: right;
+  }
+}
+@media only screen and (max-width: 775px) {
+  body {
+    justify-content: center;
+  }
+  .settings {
+    position: relative;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 610) {
+  .wrapper {
+    width: 1000px;
+  }
+  .cells {
+    padding: 0.2rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
