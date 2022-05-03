@@ -205,7 +205,7 @@ body.dark {
     justify-content: right;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
   body {
     justify-content: center;
   }
@@ -213,13 +213,19 @@ body.dark {
     position: relative;
     justify-content: flex-start;
   }
-}
-@media only screen and (max-width: 500px) {
   .wrapper {
     width: 80vw;
   }
   .cells {
     padding: 0.2rem;
+  }
+}
+@media only screen and (max-width: 800px) and (max-height: 550px) {
+  .wrapper {
+    /* height: 90vh; */
+  }
+  .cells {
+    font-size: 1.5rem;
   }
 }
 
