@@ -225,7 +225,10 @@ body.dark {
     /* height: 90vh; */
   }
   .cells {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .display-num {
+    font-size: 2rem;
   }
 }
 
