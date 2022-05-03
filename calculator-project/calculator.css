@@ -17,7 +17,8 @@ body {
     'row3'
     'row4'
     'row5';
-  width: 600px;
+  width: 60vw;
+  max-width: 600px;
   border: 3px solid black;
   border-radius: 5px;
 }
@@ -204,7 +205,7 @@ body.dark {
     justify-content: right;
   }
 }
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 600px) {
   body {
     justify-content: center;
   }
@@ -213,9 +214,9 @@ body.dark {
     justify-content: flex-start;
   }
 }
-@media only screen and (max-width: 610) {
+@media only screen and (max-width: 500px) {
   .wrapper {
-    width: 1000px;
+    width: 80vw;
   }
   .cells {
     padding: 0.2rem;
