@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shear Aviation Management</title>
+    <link rel="stylesheet" href="./css/home-styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./img/frame66.png" />
+
+    <!-- Font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&family=Playfair+Display:ital,wght@1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hamburger">
+      <div id="openHam" class="burgerDiv">
+        <img
+          id="openImg"
+          class="burgerImg"
+          src="./img/hamburger-menu/openHam.png"
+          alt="open hamburger menu"
+          onclick="hamburgerMenu(1)"
+        />
+      </div>
+      <div id="closeHam" class="burgerDiv hidden undisplayed">
+        <img
+          id="closeImg"
+          class="burgerImg"
+          src="./img/hamburger-menu/closeHam.png"
+          alt="close hamburger menu"
+          onclick="hamburgerMenu(0)"
+        />
+      </div>
+    </div>
+
+    <div id="hero" class="hero hero0">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./audits.html">Audits</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="head-wrapper">
+        <div id="left">
+          <img
+            id="left-img"
+            onclick="changeImage('l')"
+            src="./img/hero-images/back.svg"
+            alt="back"
+          />
+        </div>
+        <!-- <div id="hbuffer1"></div> -->
+        <div id="main-header">
+          <h1>Shear</h1>
+          <h1>Aviation</h1>
+          <h1>Management</h1>
+        </div>
+        <!-- <div id="hbuffer2"></div> -->
+        <div id="right">
+          <img
+            id="right-img"
+            onclick="changeImage('r')"
+            src="./img/hero-images/next.svg"
+            alt="next"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="hamNav" class="hamNav hidden">
+      <div class="hamItem"><a href="#">Home</a></div>
+      <div class="hamItem"><a href="./audits.html">Audits</a></div>
+      <div class="hamItem"><a href="#">Projects</a></div>
+      <div class="hamItem"><a href="#">About</a></div>
+      <div class="hamItem"><a href="#">Contact</a></div>
+    </div>
+    <footer>
+      <div class="buffer1"></div>
+      <div class="about">
+        <h2>About</h2>
+        <p>
+          We are an organization that specializes in the management of data in
+          aeronautics. This includes a wide range of data management facilities
+          that aim to make life simpler and more efficient for our clients. We
+          have been at this for many years now and are leaders in our field in
+          the nation. If you would like more information, feel free to get in
+          touch.
+        </p>
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: shear@bear.com</p>
+        <p>Tel: +254 777 777 777</p>
+        <div class="socials">
+          <a href="#"
+            ><img
+              class="social-icons"
+              src="./img/socials/instagram.svg"
+              alt="instagram" /></a
+          ><a href="#"
+            ><img
+              class="social-icons"
+              src="./img/socials/facebook.svg"
+              alt="facebook" /></a
+          ><a href="#"
+            ><img
+              class="social-icons"
+              src="./img/socials/linkedin.svg"
+              alt="linkedin"
+          /></a>
+        </div>
+      </div>
+      <div class="buffer2"></div>
+    </footer>
+    <script src="./js/change-image.js"></script>
+    <script src="./js/hamburger-menu.js"></script>
+  </body>
+</html>
