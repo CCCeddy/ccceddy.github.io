@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\carousel",
+    "\\carousel\\carousel",
+    "\\carousel\\carousel\\Pages",
+    "\\obj",
+    "\\obj\\Debug",
+    "\\obj\\Debug\\net6.0"
+  ],
+  "SelectedNode": "\\carousel\\carousel\\Pages\\Index.razor",
+  "PreviewInSolutionExplorer": false
+}
