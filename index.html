@@ -1,17 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eloquent JavaScript Practice</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <!-- CHAPTER 1: VALUES, TYPES, AND OPERATORS -->
-    <!-- <script src="./js/ch1.js"></script> -->
-    <!-- <script src="./js/sequence-calculator.js"></script> -->
-    <script src="./js/monty-hall.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A refreshed static GitHub Pages landing page for experiments, small apps, and frontend practice."
+    />
+    <title>ccceddy | Frontend Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" aria-label="Main navigation">
+        <a class="brand" href="./index.html" aria-label="ccceddy home">
+          <span class="brand-mark">c</span>
+          <span>ccceddy</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-</body>
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Static GitHub Pages · frontend experiments</p>
+            <h1 id="hero-title">A cleaner home for small builds, playful ideas, and web practice.</h1>
+            <p class="hero-intro">
+              This page gathers the projects in this repo into a polished landing page, with quick paths to demos and a
+              little more personality than a blank canvas.
+            </p>
+            <div class="hero-actions" aria-label="Primary links">
+              <a class="button button-primary" href="#projects">Explore projects</a>
+              <a class="button button-secondary" href="./shear-site/index.html">View featured site</a>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Site highlights">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <p class="card-kicker">Now featuring</p>
+            <h2>Portfolio-style project cards</h2>
+            <p>
+              A responsive layout, stronger typography, and useful links make the page feel more intentional on desktop
+              and mobile.
+            </p>
+            <dl class="stats-grid">
+              <div>
+                <dt>04</dt>
+                <dd>linked demos</dd>
+              </div>
+              <div>
+                <dt>100%</dt>
+                <dd>static</dd>
+              </div>
+            </dl>
+          </aside>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2 id="projects-title">Things to click around</h2>
+            <p>
+              A few of the exercises and experiments already living in the repository, surfaced in one place.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured-project">
+              <div class="project-topline">
+                <span class="tag">Featured</span>
+                <span class="project-number">01</span>
+              </div>
+              <h3>Shear site</h3>
+              <p>
+                A multi-page marketing-style site with imagery, navigation, and dedicated audit content.
+              </p>
+              <a href="./shear-site/index.html" aria-label="Open the Shear site project">Open project</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="tag">App</span>
+                <span class="project-number">02</span>
+              </div>
+              <h3>Calculator</h3>
+              <p>A browser calculator experiment with theme controls and a custom keypad interface.</p>
+              <a href="./calculator-project/calculator.html" aria-label="Open the calculator project">Open project</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="tag">Form</span>
+                <span class="project-number">03</span>
+              </div>
+              <h3>Alien abduction order form</h3>
+              <p>A whimsical form-practice page with fieldsets, radio buttons, select fields, and textarea content.</p>
+              <a href="./forms.html" aria-label="Open the alien abduction order form">Open project</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="tag">JavaScript</span>
+                <span class="project-number">04</span>
+              </div>
+              <h3>Console experiments</h3>
+              <p>Small JavaScript practice files for probability, sequences, and Eloquent JavaScript exercises.</p>
+              <a href="./js/monty-hall.js" aria-label="Open the Monty Hall JavaScript source">View source</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="split-section" id="about" aria-labelledby="about-title">
+          <div>
+            <p class="eyebrow">About the revamp</p>
+            <h2 id="about-title">Simple, responsive, and easy to keep extending.</h2>
+          </div>
+          <div class="about-panel">
+            <p>
+              The redesign keeps the site dependency-light and GitHub Pages friendly. It introduces a modern visual
+              system, accessible landmarks, project summaries, and clear calls to action without needing a build step.
+            </p>
+            <ul class="check-list">
+              <li>Mobile-first layout with responsive cards</li>
+              <li>Accessible link labels and semantic sections</li>
+              <li>Polished gradients, spacing, and hover states</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contact">
+        <p>Built as a static GitHub Pages refresh.</p>
+        <a href="https://github.com/ccceddy/ccceddy.github.io">View repository</a>
+      </footer>
+    </div>
+  </body>
 </html>
